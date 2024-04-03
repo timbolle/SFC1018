@@ -4,24 +4,25 @@ project:
 
 website:
   title: "SFC1018"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
-    sidebar:
+  # navbar:
+  #   left:
+  #     - href: index.qmd
+  #       text: Home
+  #     - about.qmd
+  sidebar:
     style: "docked"
     search: true
-    contents:
-      - section: "Les bases"
-        contents:
-          - SFC1018_Intro_R.qmd
-      - section: "Traitement de données"
-        contents:
-          - SFC1018_Traitement_R.qmd
-      - section: "Manipulation de données"
-        contents:
-          - SFC1018_Manipulation_R.qmd
+    contents: auto
+#    contents:
+#      - section: "Les bases"
+#        contents:
+#          - SFC1018_Intro_R.qmd
+#      - section: "Traitement de données"
+#        contents:
+#          - SFC1018_Traitement_R.qmd
+#      - section: "Manipulation de données"
+#        contents:
+#          - SFC1018_Manipulation_R.qmd
 
 format:
   html:
