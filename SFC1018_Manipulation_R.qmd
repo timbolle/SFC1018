@@ -90,7 +90,7 @@ slice_max(airports, alt, n = 5)
 
 ### `filter` {#sec-filter}
 
-`filter` sélectionne des lignes d'une table selon une condition. On lui passe en paramètre un test, et seules les lignes pour lesquelles ce test renvoie `TRUE` (vrai) sont conservées. Pour plus d'informations sur les tests et leur syntaxe, voir @sec-tests.
+`filter` sélectionne des lignes d'une table selon une condition. On lui passe en paramètre un test, et seules les lignes pour lesquelles ce test renvoie `TRUE` (vrai) sont conservées.
 
 Par exemple, si on veut sélectionner les vols du mois de janvier, on peut filtrer sur la variable `month` de la manière suivante :
 
@@ -218,7 +218,7 @@ flights <- mutate(
 select(flights, air_time, duree_h, distance, distance_km, vitesse)
 ```
 
-À noter que `mutate` est évidemment parfaitement compatible avec les fonctions vues @sec-vectorfactor sur les recodages : `fct_recode`, `ifelse`, `case_when`...
+À noter que `mutate` est évidemment parfaitement compatible avec les fonctions vues sur les recodages : `fct_recode`, `ifelse`, `case_when`...
 
 L'avantage d'utiliser `mutate` est double. D'abord il permet d'éviter d'avoir à saisir le nom du tableau de données dans les conditions d'un `ifelse` ou d'un `case_when` :
 

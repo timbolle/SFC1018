@@ -74,11 +74,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
+  "location": "sidebar",
   "copy-button": false,
   "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
+  "panel-placement": "start",
+  "type": "textbox",
   "limit": 50,
   "keyboard-shortcut": [
     "f",
@@ -105,43 +105,98 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="floating nav-fixed">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">SFC1018</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
-</div>
-      </div> <!-- /container-fluid -->
-    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SFC1018_Manipulation_R.html">Manipulation de données</a></li><li class="breadcrumb-item"><a href="./SFC1018_Manipulation_R.html">Manipulation de données</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">SFC1018</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Les bases</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SFC1018_Intro_R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction à R</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
+ <span class="menu-text">Traitement de données</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SFC1018_Traitement_R.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Traitement de données avec R</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Manipulation de données</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./SFC1018_Manipulation_R.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Manipulation de données</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="2">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
@@ -198,15 +253,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   </ul>
 </nav>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./SFC1018_Manipulation_R.html">Manipulation de données</a></li><li class="breadcrumb-item"><a href="./SFC1018_Manipulation_R.html">Manipulation de données</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Manipulation de données</h1>
 </div>
@@ -339,7 +390,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="sec-filter" class="level3" data-number="1.2.2">
 <h3 data-number="1.2.2" class="anchored" data-anchor-id="sec-filter"><span class="header-section-number">1.2.2</span> <code>filter</code></h3>
-<p><code>filter</code> sélectionne des lignes d’une table selon une condition. On lui passe en paramètre un test, et seules les lignes pour lesquelles ce test renvoie <code>TRUE</code> (vrai) sont conservées. Pour plus d’informations sur les tests et leur syntaxe, voir <strong>?@sec-tests</strong>.</p>
+<p><code>filter</code> sélectionne des lignes d’une table selon une condition. On lui passe en paramètre un test, et seules les lignes pour lesquelles ce test renvoie <code>TRUE</code> (vrai) sont conservées.</p>
 <p>Par exemple, si on veut sélectionner les vols du mois de janvier, on peut filtrer sur la variable <code>month</code> de la manière suivante&nbsp;:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filter</span>(flights, month <span class="sc">==</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -684,7 +735,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 # ℹ 336,766 more rows</code></pre>
 </div>
 </div>
-<p>À noter que <code>mutate</code> est évidemment parfaitement compatible avec les fonctions vues <strong>?@sec-vectorfactor</strong> sur les recodages&nbsp;: <code>fct_recode</code>, <code>ifelse</code>, <code>case_when</code>…</p>
+<p>À noter que <code>mutate</code> est évidemment parfaitement compatible avec les fonctions vues sur les recodages&nbsp;: <code>fct_recode</code>, <code>ifelse</code>, <code>case_when</code>…</p>
 <p>L’avantage d’utiliser <code>mutate</code> est double. D’abord il permet d’éviter d’avoir à saisir le nom du tableau de données dans les conditions d’un <code>ifelse</code> ou d’un <code>case_when</code>&nbsp;:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>flights <span class="ot">&lt;-</span> <span class="fu">mutate</span>(</span>
@@ -1343,13 +1394,13 @@ the `.groups` argument.</code></pre>
 <div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>airports <span class="sc">%&gt;%</span> <span class="fu">slice_sample</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 8
-  faa   name                               lat    lon   alt    tz dst   tzone   
-  &lt;chr&gt; &lt;chr&gt;                            &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;   
-1 SME   Lake Cumberland Regional Airport  37.1  -84.6   927    -5 A     America…
-2 CVX   Charlevoix Municipal Airport      45.3  -85.3   669    -5 A     America…
-3 KKH   Kongiganak Airport                60.0 -163.     30    -9 A     America…
-4 MCI   Kansas City Intl                  39.3  -94.7  1026    -6 A     America…
-5 DET   Coleman A Young Muni              42.4  -83.0   626    -5 A     America…</code></pre>
+  faa   name                           lat    lon   alt    tz dst   tzone       
+  &lt;chr&gt; &lt;chr&gt;                        &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;       
+1 MER   Castle                        37.4 -121.    189    -8 A     America/Los…
+2 LNK   Lincoln                       40.9  -96.8  1219    -6 A     America/Chi…
+3 DAB   Daytona Beach Intl            29.2  -81.1    34    -5 A     America/New…
+4 ARV   Lakeland                      45.9  -89.7  1629    -6 A     America/Chi…
+5 HUT   Hutchinson Municipal Airport  38.1  -97.9  1543    -6 A     America/Chi…</code></pre>
 </div>
 </div>
 <p>Si on veut tirer au hasard 10% des lignes de <code>flights</code>&nbsp;:</p>
@@ -1359,16 +1410,16 @@ the `.groups` argument.</code></pre>
 <pre><code># A tibble: 33,677 × 22
     year month   day dep_time sched_dep_time dep_delay arr_time sched_arr_time
    &lt;int&gt; &lt;int&gt; &lt;int&gt;    &lt;int&gt;          &lt;int&gt;     &lt;dbl&gt;    &lt;int&gt;          &lt;int&gt;
- 1  2013     2    10      746            745         1     1211           1234
- 2  2013    12    11     1047           1047         0     1248           1245
- 3  2013     3     8       NA           1729        NA       NA           2049
- 4  2013     2    25     1249           1300       -11     1442           1450
- 5  2013    10     4      803            810        -7     1052           1119
- 6  2013    10    10     1515           1454        21     1716           1712
- 7  2013    11    17     1150           1151        -1     1514           1459
- 8  2013    10    24      634            637        -3      922            923
- 9  2013     3    16      825            830        -5     1041           1106
-10  2013     7    14      112           2359        73      447            340
+ 1  2013    10    31     1127           1135        -8     1402           1341
+ 2  2013    12    16        2           2250        72      111           2356
+ 3  2013    12    27     1042           1030        12     1158           1155
+ 4  2013     5    30      727            722         5     1026           1053
+ 5  2013     6     4     1357           1358        -1     1644           1704
+ 6  2013     8    13      648            625        23      932            915
+ 7  2013     5    22     1328           1329        -1     1619           1618
+ 8  2013    12     4     1313           1259        14     1600           1614
+ 9  2013     8     3     1324           1145        99     1528           1340
+10  2013     1     8      708            700         8      837            839
 # ℹ 33,667 more rows
 # ℹ 14 more variables: arr_delay &lt;dbl&gt;, carrier &lt;chr&gt;, flight &lt;int&gt;,
 #   tailnum &lt;chr&gt;, origin &lt;chr&gt;, dest &lt;chr&gt;, air_time &lt;dbl&gt;, distance &lt;dbl&gt;,

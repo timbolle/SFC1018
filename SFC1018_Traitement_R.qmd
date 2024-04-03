@@ -743,7 +743,7 @@ Ou un tableau (plus précisément une matrice) si on ajoute `simplify = TRUE`.
 str_split(d$nom, " ", simplify = TRUE)
 ```
 
-Si on souhaite créer de nouvelles colonnes dans un tableau de données en découpant une colonne de type texte, on pourra utiliser la fonction `separate` de l'extension `tidyr`. Celle-ci est expliquée @sec-separate.
+Si on souhaite créer de nouvelles colonnes dans un tableau de données en découpant une colonne de type texte, on pourra utiliser la fonction `separate` de l'extension `tidyr`.
 
 Voici juste un exemple de son utilisation :
 
