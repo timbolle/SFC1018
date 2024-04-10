@@ -924,7 +924,7 @@ data("diamonds")
 Faire un nuage de points croisant le prix en fonction de la masse (`carat`).
 
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_point(aes(x = carat, y = price))
@@ -935,7 +935,7 @@ diamonds %>%
 
 Faire un nuage de points croisant le prix et la masse, avec les points en rouge et de transparence 0.2.
 
-```{r gg2, eval=FALSE, echo=FALSE}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_point(aes(x = carat, y = price), color = "red", alpha = 0.2)
@@ -947,7 +947,7 @@ diamonds %>%
 Représenter le prix selon la qualité de la taille (variable `cut`) sous forme de boîtes à moustaches.
 
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_boxplot(aes(x = cut, y = price))
@@ -958,7 +958,7 @@ diamonds %>%
 Représenter le nombre de diamants, selon la catégorie de taille (`cut`) sous la forme d'un diagramme en bâtons.
 
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_bar(aes(x = cut))
@@ -969,7 +969,7 @@ diamonds %>%
 Faire un nuage de points croisant le prix et la masse. Faire varier la couleur selon la catégorie de taille (`cut`).
 
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_point(aes(x = carat, y = price, color=cut))
@@ -977,7 +977,7 @@ diamonds %>%
 
 Sur le même graphique, rendre les points transparents en plaçant leur opacité à 0.5.
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_point(aes(x = carat, y = price, color=cut), alpha=0.5)
@@ -987,7 +987,7 @@ diamonds %>%
 
 À l'aide d'un boxplot, représentez le prix en fonction de la coupe. Faites varier la couleur en fonction de la couleur du diamant (`color`).
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_boxplot(aes(x = cut, y = price, color=color))
@@ -997,7 +997,7 @@ diamonds %>%
 
 À l'aide d'un diagramme en bâton, représentez le nombre de diamants par type de taille (`cut`). Faites varier la couleur pour représenter les différentes couleurs de diamants.
 
-```{r gg1, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_bar(aes(x = cut, fill=color))
@@ -1011,7 +1011,7 @@ Changer à nouveau la valeur du paramètre `position` pour représenter les prop
 
 Faire un nuage de points représentant en abscisse la variable `x` et en ordonnée la variable `y`. Représenter ce nuage par des graphiques différents selon le type de taille en utilisant `facet_grid`.
 
-```{r, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   ggplot() +
     geom_point(aes(x = x, y=y)) +
@@ -1020,7 +1020,7 @@ diamonds %>%
 
 Sur le même graphique, filtrez les valeurs extrèmes
 
-```{r, eval=FALSE, echo=False}
+```{r, eval=FALSE, echo=FALSE}
 diamonds %>%
   filter(y<30) %>%
   ggplot() +
