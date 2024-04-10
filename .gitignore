@@ -1,3 +1,6 @@
 /.quarto/
 .Rproj.user
 .quarto/
+
+.Rhistory
+*.zip

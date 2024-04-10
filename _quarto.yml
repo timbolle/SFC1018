@@ -23,6 +23,9 @@ website:
       - section: "Manipulation de données"
         contents:
           - SFC1018_Manipulation_R.qmd
+      - section: "Représentation de données"
+        contents:
+          - SFC1018_Visualisation_R.qmd
 
 format:
   html:
